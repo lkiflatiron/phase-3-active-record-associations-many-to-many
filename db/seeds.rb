@@ -19,5 +19,8 @@ puts "🌱 Seeding data..."
     )
   end
 end
+g1 = Game.create(title: "Candyland", genre: "Kids")
+
+r2 = Review.create(game_id: g1.id)
 
 puts "🌱 Done seeding!"
